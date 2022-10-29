@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 a {
@@ -13,9 +16,36 @@ a {
 
 * {
   box-sizing: border-box;
+  /* cursor: url('../public/brush.png'), auto; */
+  
 }
 
-@media (prefers-color-scheme: dark) {
+::-webkit-scrollbar{
+    height: 0px;
+    width: 8px;
+    background: gray;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #000;
+    border-radius: 10px;
+}
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +53,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
