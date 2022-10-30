@@ -1,9 +1,11 @@
 import React from 'react';
 import { HeroContainer } from './../../Blocks/Hero/style';
-import { CategoriesContainer, CategoriesWrapper, CategoryContainer, ItemContainer, ItemInfo, ItemsContainer, ItemsWrapper } from './style';
+import { CategoriesContainer, CategoriesWrapper, CategoryContainer, ItemContainer, ItemInfo, ItemsContainer, ItemsWrapper, ValueContainer, ValuesContainer } from './style';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { MdArrowBackIosNew, MdArrowForwardIos, MdAddShoppingCart } from "react-icons/md"
 import { AiOutlineHeart } from "react-icons/ai"
+import {RiHandCoinLine} from "react-icons/ri"
+import { CiDeliveryTruck, CiMedal } from "react-icons/ci"
 
 function Hero() {
   return (
@@ -132,13 +134,13 @@ export function RightArrow() {
 }
 
 const Item = () => {
-  return(
+  return (
     <ItemContainer>
       <img src="/el.jpg" alt="" />
       <div className="item-icons">
         <div>
 
-          <AiOutlineHeart/>
+          <AiOutlineHeart />
         </div>
         <div>
 
@@ -160,17 +162,35 @@ const Items = () => {
         <h2>From the shop<div></div></h2>
       </div>
       <ItemsWrapper>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
       </ItemsWrapper>
     </ItemsContainer>
   )
 }
 
+const Values = () => {
+  return (
+    <ValuesContainer>
+      <ValueContainer>
+        <CiDeliveryTruck size={50}/>
+        <p>Free & ontime delivery</p>
+      </ValueContainer>
+      <ValueContainer>
+        <RiHandCoinLine size={50}/>
+        <p>Money back guarantee</p>
+      </ValueContainer>
+      <ValueContainer>
+        <CiMedal size={50}/>
+        <p>Money back guarantee</p>
+      </ValueContainer>
+    </ValuesContainer>
+  )
+}
 
 function HomePage() {
   return (
@@ -178,6 +198,7 @@ function HomePage() {
       <Hero />
       <Categories />
       <Items />
+      <Values />
     </>
   )
 }

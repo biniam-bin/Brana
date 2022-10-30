@@ -21,7 +21,7 @@ export const CategoriesContainer = styled.div`
             margin: 0;
             margin: 40px;
             div{
-                background-color: red;
+                background-color: #ff8c00;
                 height: 5px;
                 margin-top: 8px !important;
                 width: 70%;
@@ -100,8 +100,8 @@ align-items: center;
             margin: 0;
             margin: 40px;
             div{
-                background-color: red;
-                height: 5px;
+                background-color: #ff8c00;
+                height: 6px;
                 margin-top: 8px !important;
                 width: 70%;
                 margin: 0 auto;
@@ -167,4 +167,34 @@ export const ItemInfo = styled.div`
     p{
         margin: 3px 0;
     }
+`
+
+export const ValuesContainer = styled.div`
+    height: 280px;
+    /* background-color: red; */
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+`
+export const ValueContainer = styled.div`
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 20px;
+    width: 200px;
+    text-align: center;
+    color: #ffa500;
+    border: 3px solid #ffa500;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    p{
+        color: #3A3B3C;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
 `
