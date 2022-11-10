@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { CartConainer, HeaderContainer } from './style'
 import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai"
-
+import Link from "next/link"
 
 const Cart = ({showCart}) => {
   return (
@@ -18,7 +18,9 @@ function Header() {
     <>
       <HeaderContainer>
         <div className="logo">
+          <Link href="/">
           <h2>BRANA</h2>
+          </Link>
         </div>
         <div className="icons">
 

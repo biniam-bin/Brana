@@ -1,5 +1,7 @@
 import React from 'react'
 import { FooterContainer, FooterSection } from './style'
+import Link from "next/link"
+
 
 function Footer() {
   return (
@@ -21,9 +23,9 @@ function Footer() {
         <div className="links">
           <div className="title"><h2>Web Links</h2></div>
           <div className="body">
-            <div className="">Home</div>
-            <div className="">About</div>
-            <div className="">Contact us</div>
+            <Link href="/"><div className="">Home</div></Link>
+            <Link href="/about"><div className="">About</div></Link>
+            <Link href="/contact"><div className="">Contact us</div></Link>
             {/* <div className="">Home</div> */}
           </div>
         </div>

@@ -160,6 +160,14 @@ export const ItemContainer = styled.div`
     img{
         height: 320px;
         width: 280px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+    }
+    transition: all 300ms ease-in;
+    :hover{
+
+        transform: Scale(1.02);
     }
 `
 export const ItemInfo = styled.div`

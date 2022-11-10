@@ -13,6 +13,7 @@ export const HeaderContainer = styled.div`
     top: 0;
     background-color: rgba(255, 255, 255, 1);
     z-index: 100;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     /* padding: 10px; */
     color: #3A3B3C;
     .logo{
@@ -20,6 +21,7 @@ export const HeaderContainer = styled.div`
         h2{
 
             margin: 0;
+            cursor: pointer;
         }
     }
     .icons{

@@ -82,9 +82,10 @@ export const FooterSection = styled.div`
             text-align: center;
             div{
                 /* background: yellow; */
-                padding: 6px 20px;
+                padding: 0px 20px;
                 cursor: pointer;
-                margin-bottom: 10px;
+                margin-bottom: 6px;
+                cursor: pointer;
                 :hover{
                     color: white;
                 }

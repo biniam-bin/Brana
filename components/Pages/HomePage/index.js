@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import { HeroContainer } from './../../Blocks/Hero/style';
 import { CategoriesContainer, CategoriesWrapper, CategoryContainer, ItemContainer, ItemInfo, ItemsContainer, ItemsWrapper, ValueContainer, ValuesContainer } from './style';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
@@ -136,7 +137,9 @@ export function RightArrow() {
 const Item = () => {
   return (
     <ItemContainer>
+      <Link href="/item/3">
       <img src="/el.jpg" alt="" />
+      </Link>
       <div className="item-icons">
         <div>
 
@@ -155,7 +158,7 @@ const Item = () => {
     </ItemContainer>
   )
 }
-const Items = () => {
+export const Items = () => {
   return (
     <ItemsContainer>
       <div className="title">
@@ -186,7 +189,7 @@ const Values = () => {
       </ValueContainer>
       <ValueContainer>
         <CiMedal size={50}/>
-        <p>Money back guarantee</p>
+        <p>High quality products</p>
       </ValueContainer>
     </ValuesContainer>
   )
