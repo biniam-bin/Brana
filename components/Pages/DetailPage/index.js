@@ -34,6 +34,10 @@ function DetailsPage() {
       <DescriptionContainer>
         <h2>War Horse</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolore sapiente repellendus earum qui quisquam aperiam veritatis inventore dolorem. Praesentium ipsa illo excepturi aperiam dignissimos odio voluptas, et repellendus? Natus dolor corporis veritatis reprehenderit soluta. Nobis, quasi. Repudiandae obcaecati ullam magni doloribus placeat optio, tenetur totam quos sit earum cumque non tempore ex, beatae inventore ipsum iste vero odio iusto error officia. Ex provident, rerum.</p>
+          <div className="price">
+            <span>PRICE: </span>
+            <p>$220 (19,600 ETB)</p>
+          </div>
           <div className="buttons">
             <div className="btn-outline">Add To Cart</div>
             <div className="btn">Order Now</div>

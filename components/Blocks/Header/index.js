@@ -28,12 +28,15 @@ function Header() {
             <AiOutlineHeart />
             <div className='fav-items'>5</div>
           </div>
+          <Link href="/cart">
+
           <div className="icon" onClick={
             () => setShowCart(!showCart)
           }>
             <AiOutlineShoppingCart />
             <div className='cart-items'>2</div>
           </div>
+            </Link>
         </div>
 
       </HeaderContainer>

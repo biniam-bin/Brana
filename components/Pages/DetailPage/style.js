@@ -57,6 +57,16 @@ export const DescriptionContainer = styled.div`
      h2{
         margin-top: 0px;
      }
+     .price{
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        
+        p{
+            margin: 0 8px
+        }
+     }
     .buttons{
         display: flex;
         flex-direction: column;
