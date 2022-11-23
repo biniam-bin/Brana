@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from "next/link";
+import ScrollAnimation from "react-animate-on-scroll"
 import { HeroContainer } from './../../Blocks/Hero/style';
 import { CategoriesContainer, CategoriesWrapper, CategoryContainer, ItemContainer, ItemInfo, ItemsContainer, ItemsWrapper, ValueContainer, ValuesContainer } from './style';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { MdArrowBackIosNew, MdArrowForwardIos, MdAddShoppingCart } from "react-icons/md"
 import { AiOutlineHeart } from "react-icons/ai"
-import {RiHandCoinLine} from "react-icons/ri"
+import { RiHandCoinLine } from "react-icons/ri"
 import { CiDeliveryTruck, CiMedal } from "react-icons/ci"
 
 function Hero() {
@@ -34,7 +35,10 @@ function Categories() {
   return (
     <CategoriesContainer>
       <div className="title">
+        <ScrollAnimation animateIn='fadeIn'>
+
         <h2>Categories <div></div></h2>
+        </ScrollAnimation>
       </div>
       <CategoriesWrapper>
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
@@ -136,35 +140,48 @@ export function RightArrow() {
 
 const Item = () => {
   return (
-    <ItemContainer>
-      <Link href="/item/3">
-      <img src="/el.jpg" alt="" />
-      </Link>
-      <div className="item-icons">
-        <div>
+    <ScrollAnimation animateIn='bounceInTop'
+      animateOut='bounceOutBottom'
+      >
+      <ItemContainer>
+        <Link href="/item/3">
+          <img src="/el.jpg" alt="" />
+        </Link>
+        <div className="item-icons">
+          <div>
 
-          <AiOutlineHeart />
-        </div>
-        <div>
+            <AiOutlineHeart />
+          </div>
+          <div>
 
-          <MdAddShoppingCart />
+            <MdAddShoppingCart />
+          </div>
         </div>
-      </div>
-      <ItemInfo>
-        <p className="title">War horse</p>
-        <p className="dimention">40 x 30 in</p>
-        <p className="price">$450</p>
-      </ItemInfo>
-    </ItemContainer>
+        <ItemInfo>
+          <p className="title">War horse</p>
+          <p className="dimention">40 x 30 in</p>
+          <p className="price">$450</p>
+        </ItemInfo>
+      </ItemContainer>
+    </ScrollAnimation>
   )
 }
 export const Items = () => {
   return (
     <ItemsContainer>
       <div className="title">
+        <ScrollAnimation animateIn='fadeIn'>
+
         <h2>From the shop<div></div></h2>
+        </ScrollAnimation>
       </div>
       <ItemsWrapper>
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
         <Item />
         <Item />
         <Item />
@@ -180,15 +197,15 @@ const Values = () => {
   return (
     <ValuesContainer>
       <ValueContainer>
-        <CiDeliveryTruck size={50}/>
+        <CiDeliveryTruck size={50} />
         <p>Free & ontime delivery</p>
       </ValueContainer>
       <ValueContainer>
-        <RiHandCoinLine size={50}/>
+        <RiHandCoinLine size={50} />
         <p>Money back guarantee</p>
       </ValueContainer>
       <ValueContainer>
-        <CiMedal size={50}/>
+        <CiMedal size={50} />
         <p>High quality products</p>
       </ValueContainer>
     </ValuesContainer>

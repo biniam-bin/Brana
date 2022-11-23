@@ -3,6 +3,7 @@ import { CarouselContainer, DescriptionContainer, DtailsPageContainer, RelatedIt
 var Carousel = require("react-responsive-carousel").Carousel;
 import "react-responsive-carousel/lib/styles/carousel.css";
 import { Items } from '../HomePage';
+import ScrollAnimation from "react-animate-on-scroll"
 
 function DetailsPage() {
   return (
@@ -30,7 +31,8 @@ function DetailsPage() {
               <img src="/el.jpg" />
             </div>
           </Carousel>
-      </CarouselContainer>
+        </CarouselContainer>
+        
       <DescriptionContainer>
         <h2>War Horse</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolore sapiente repellendus earum qui quisquam aperiam veritatis inventore dolorem. Praesentium ipsa illo excepturi aperiam dignissimos odio voluptas, et repellendus? Natus dolor corporis veritatis reprehenderit soluta. Nobis, quasi. Repudiandae obcaecati ullam magni doloribus placeat optio, tenetur totam quos sit earum cumque non tempore ex, beatae inventore ipsum iste vero odio iusto error officia. Ex provident, rerum.</p>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { keyframes } from 'styled-components'
 
 export const DtailsPageContainer = styled.div`
 
@@ -12,6 +12,7 @@ gap: 10px;
 grid-auto-rows: minmax(100px, auto);
 margin-top: 15px;
 min-height: 80vh;
+margin-top: 50px;
 /* background: red; */
 @media (max-width: 800px) {
     
@@ -20,13 +21,30 @@ min-height: 80vh;
      }
     
 `
+const slideInFromLeft = keyframes`
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+`
 
+const slideInFromRight =  keyframes`
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+`
 
 export const CarouselContainer = styled.div`
   /* background: red; */
   grid-column: 1 / 7;
   grid-row: 1 / 4;
   flex: 0.5;
+  animation: 1s ease-out 0s 1 ${slideInFromLeft};
   /* max-height: 750px; */
   div {
       /* width: 800px; */
@@ -49,6 +67,7 @@ export const DescriptionContainer = styled.div`
     padding: 0 30px;
     flex: 0.5;
     color: #3A3B3C;
+    animation: 1s ease-out 0s 1 ${slideInFromRight};
     @media (max-width: 1000) {
         grid-column: 1 / 7;
         grid-row: 5 / 9;
