@@ -23,6 +23,10 @@ export const HeaderContainer = styled.div`
             margin: 0;
             cursor: pointer;
         }
+        img{
+            height: 50px;
+            cursor: pointer;
+        }
     }
     .icons{
         display: flex;

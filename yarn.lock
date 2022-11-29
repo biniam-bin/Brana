@@ -1127,6 +1127,11 @@ core-js-pure@^3.25.1:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.26.0.tgz#7ad8a5dd7d910756f3124374b50026e23265ca9a"
   integrity sha512-LiN6fylpVBVwT8twhhluD9TzXmZQQsr2I2eIKtWNbZI1XMfBT7CV18itaN6RA7EtQd/SDdRx/wzvAShX2HvhQA==
 
+core-js@^3.8.1:
+  version "3.26.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
+  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
+
 core-util-is@~1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
@@ -2450,6 +2455,13 @@ react-responsive-carousel@^3.2.23:
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.21"
 
+react-simply-carousel@^8.4.1:
+  version "8.4.1"
+  resolved "https://registry.yarnpkg.com/react-simply-carousel/-/react-simply-carousel-8.4.1.tgz#73f1e479685c55fc1fb1cb4711d8977c3f96498c"
+  integrity sha512-Yxj7sIHIpzdwXuLvrZNuHA4+z81HVGA2b8XtxnsAOZ18rxiZidKop+5OP8frKmVa5TzkBCc/b6N6Ar1gzeEemw==
+  dependencies:
+    core-js "^3.8.1"
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
@@ -2470,10 +2482,10 @@ readable-stream@~2.3.6:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-redux-persist@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-6.0.0.tgz#b4d2972f9859597c130d40d4b146fecdab51b3a8"
-  integrity sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ==
+redux-persist@5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-5.10.0.tgz#5d8d802c5571e55924efc1c3a9b23575283be62b"
+  integrity sha512-sSJAzNq7zka3qVHKce1hbvqf0Vf5DuTVm7dr4GtsqQVOexnrvbV47RWFiPxQ8fscnyiuWyD2O92DOxPl0tGCRg==
 
 redux-thunk@^2.4.2:
   version "2.4.2"

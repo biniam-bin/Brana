@@ -2,6 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import ScrollAnimation from "react-animate-on-scroll"
 import { HeroContainer } from './../../Blocks/Hero/style';
+import Hero from "../../Blocks/Hero"
 import { CategoriesContainer, CategoriesWrapper, CategoryContainer, ItemContainer, ItemInfo, ItemsContainer, ItemsWrapper, ValueContainer, ValuesContainer } from './style';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { MdArrowBackIosNew, MdArrowForwardIos, MdAddShoppingCart } from "react-icons/md"
@@ -9,22 +10,26 @@ import { AiOutlineHeart } from "react-icons/ai"
 import { RiHandCoinLine } from "react-icons/ri"
 import { CiDeliveryTruck, CiMedal } from "react-icons/ci"
 
-function Hero() {
-  return (
-    <HeroContainer>
-      hkn
-    </HeroContainer>
-  )
-}
+
 // color="#ffa500" hcolor="#ff8c00"
-function Category() {
+
+const categoryList = [
+  { img: "/cat/mixed-media.jpg", title: "Mixed media", link: "/category/mixed-media"},
+  { img: "/cat/ethiopian2.jpg", title: "Ethiopian art", link: "/category/ethiopian"},
+  { img: "/cat/mosaic.jpg", title: "Paper mosaic", link: "/category/mosaic"},
+  { img: "/cat/oil-painting.jpg", title: "Oil painting", link: "/category/oil-painting"},
+  { img: "/cat/abstract.jpg", title: "Abstract", link: "/category/abstract"},
+]
+function Category({category}) {
   return (
     <>
       <CategoryContainer>
-        <img src="/el.jpg" alt="" />
+        <img src={category.img} alt="" />
         <div className="info">
-          <h3>ETHIOPIAN ARTS</h3>
+          <h3>{category.title}</h3>
+          <Link href={category.link}>
           <div>View</div>
+          </Link>
         </div>
       </CategoryContainer>
     </>
@@ -42,14 +47,17 @@ function Categories() {
       </div>
       <CategoriesWrapper>
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-
+          {categoryList.map((category) => {
+            return (
+              <Category category={category} />
+            )
+          })}          
+          {/* <Category />
           <Category />
           <Category />
           <Category />
           <Category />
-          <Category />
-          <Category />
-          <Category />
+          <Category /> */}
         </ScrollMenu>
       </CategoriesWrapper>
     </CategoriesContainer>
@@ -145,7 +153,7 @@ const Item = () => {
       >
       <ItemContainer>
         <Link href="/item/3">
-          <img src="/el.jpg" alt="" />
+          <img src="/cat/mixed-media.jpg" alt="" />
         </Link>
         <div className="item-icons">
           <div>

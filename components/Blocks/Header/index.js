@@ -38,7 +38,10 @@ function Header() {
       <HeaderContainer>
         <div className="logo">
           <Link href="/">
-            <h2>BRANA</h2>
+            {/* <h2>BRANA</h2> */}
+            <Link href="/">
+            <img src="/brana-logo.png" alt="" />
+            </Link>
           </Link>
         </div>
         <div className="icons">

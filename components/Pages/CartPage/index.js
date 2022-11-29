@@ -21,7 +21,6 @@ export const CartSummary = () => {
                         <tr>
 
                             <div className="hr"></div>
-
                         </tr>
                         <tr>
 
@@ -54,6 +53,19 @@ export const CartSummary = () => {
                                 </div>
                             </td>
                             <td><span className="price">$220 (19, 500 ETB)</span></td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <div className="p-container">
+                                   
+                                    <span>Total:</span>
+                                </div>
+                            </td>
+                            <td><span className="price">$440 (39, 500 ETB)</span></td>
                         </tr>
                     </tbody>
                     {/* <tfoot>
