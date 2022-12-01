@@ -49,7 +49,7 @@ function Categories() {
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
           {categoryList.map((category) => {
             return (
-              <Category category={category} />
+              <Category category={category} key={category.link} />
             )
           })}          
           {/* <Category />
